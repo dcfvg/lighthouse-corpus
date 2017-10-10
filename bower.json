@@ -1,0 +1,17 @@
+{
+  "name": "lighthouse",
+  "description": "",
+  "main": "gulpfile.js",
+  "authors": [
+    "dcfvg <qwsx@dcfvg.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

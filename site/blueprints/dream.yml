@@ -1,0 +1,142 @@
+title: Dream
+
+files:
+  sortable: true
+
+pages: false
+
+fields:
+  title:
+    label: Title
+    type:  text
+    width: 2/4
+  id:
+    label: Numero Rêve
+    type:  number
+    width: 2/4
+
+  ficheinfo:
+    label: Fiche info
+    type: headline
+
+  date:
+    label: Date
+    type: date
+    default: today
+    width: 1/3
+
+  heure:
+    label: Heure
+    type: time
+    interval: 5
+    default: now
+    width: 1/3
+
+  timecode:
+    label: timecode
+    type: time
+    interval: 1
+    width: 1/3
+
+  mode:
+    label: Mode
+    type: tags
+    lower: true
+    width: 1/3
+
+  nature:
+    label: nature du rêve
+    type: tags
+    lower: true
+    width: 1/3
+
+  retranscripteur:
+    label: retranscripteur
+    type: tags
+    lower: true
+    width: 1/3
+
+  lieu:
+    label: description du lieu
+    type: text
+    width: 1/2
+
+  lng:
+    label: longitude
+    type: number
+    width: 1/4
+
+  lat:
+    label: latitude
+    type: number
+    width: 1/4
+
+  portraitreveur:
+    label: portrait du rêveur
+    type: headline
+
+  nom:
+    label: nom
+    type: text
+    width: 1/3
+
+  age:
+    label: age
+    type: number
+    width: 1/3
+
+  sexe:
+    label: sexe
+    type: tags
+    lower: true
+    width: 1/3
+
+  lieudenaissance:
+    label: lieu de naissance
+    type: tags
+    lower: true
+    width: 1/3
+
+  languematernelle:
+    label: langue maternelle
+    type: tags
+    lower: true
+    width: 1/3
+
+  lieudevie:
+    label: lieu de vie
+    type: tags
+    lower: true
+    width: 1/3
+
+  profession:
+    label: profession
+    type: tags
+    lower: true
+    width: 1/3
+
+  religionenfance:
+    label: religion enfance
+    type: tags
+    lower: true
+    width: 1/3
+
+  religionpresente:
+    label: religion presente
+    type: tags
+    lower: true
+    width: 1/3
+
+  situation:
+    label: situation
+    type: markdown
+
+  recit:
+    label: entretien édité
+    type: markdown
+
+  retranscription:
+    label: entretien brut
+    type: markdown
+
+

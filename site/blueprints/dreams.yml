@@ -1,0 +1,16 @@
+title: Dreams
+
+files: false
+
+pages:
+  template: dream
+
+options:
+  template: false
+  status: false
+  url: false
+
+fields:
+  title:
+    label: Title
+    type:  text
