@@ -7,7 +7,7 @@ pages:
 
 options:
   template: true
-  status: false
+  status: true
   url: false
 
 fields:
