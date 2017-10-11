@@ -83,12 +83,12 @@ fields:
 
   lng:
     label: longitude
-    type: number
+    type: text
     width: 1/4
 
   lat:
     label: latitude
-    type: number
+    type: text
     width: 1/4
 
   portraitreveur:

@@ -15,7 +15,7 @@ for more information: http://getkirby.com/license
 
 */
 
-c::set('license', 'put your license key here');
+c::set('license', 'K2-PERSONAL-e9c8d842df31d4e06a0ac09aac15e0fb');
 c::set('panel.install', true);
 c::set('debug', true);
 
@@ -30,3 +30,5 @@ make Kirby work. For more fine-grained configuration
 of the system, please check out http://getkirby.com/docs/advanced/options
 
 */
+
+
