@@ -45,29 +45,34 @@ fields:
   rapporteurs:
     label: rapporteurs
     type: tags
+    index: all
     lower: true
     width: 1/2
 
   retranscripteur:
     label: retranscripteur
     type: tags
+    index: all
     lower: true
     width: 1/2
 
   mode:
     label: Mode
     type: tags
+    index: all
     lower: true
     width: 1/2
 
   nature:
     label: nature du rêve
     type: tags
+    index: all
     lower: true
     width: 1/2
   theme:
     label: thèmes
     type: tags
+    index: all
     lower: true
     width: 1/2
 
@@ -103,42 +108,49 @@ fields:
   sexe:
     label: sexe
     type: tags
+    index: all
     lower: true
     width: 1/3
 
   lieudenaissance:
     label: lieu de naissance
     type: tags
+    index: all
     lower: true
     width: 1/2
 
   languematernelle:
     label: langue maternelle
     type: tags
+    index: all
     lower: true
     width: 1/2
 
   lieudevie:
     label: lieu de vie
     type: tags
+    index: all
     lower: true
     width: 1/2
 
   profession:
     label: profession
     type: tags
+    index: all
     lower: true
     width: 1/2
 
   religionenfance:
     label: religion enfance
     type: tags
+    index: all
     lower: true
     width: 1/2
 
   religionpresente:
     label: religion presente
     type: tags
+    index: all
     lower: true
     width: 1/2
 
