@@ -6,7 +6,7 @@ pages:
   template: dream
 
 options:
-  template: false
+  template: true
   status: false
   url: false
 

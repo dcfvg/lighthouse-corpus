@@ -11,7 +11,7 @@
   <?= css('assets/css/screen.css') ?>
 
 </head>
-<body>
+<body class="<?php echo $page->template() ?>">
 
   <header class="container" role="banner">
       <div class="branding column">
