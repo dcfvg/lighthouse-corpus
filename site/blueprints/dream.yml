@@ -77,9 +77,18 @@ fields:
     width: 1/2
 
   lieu:
-    label: description du lieu
+    label: (description du lieu)
     type: text
     width: 1/2
+
+  posEntretien:
+    label: Lieu entretien
+    type: map
+    center:
+      lat: 48.892423
+      lng: 2.215330999999992
+      zoom: 14
+    help: Déplacer le marqueur ou rechercher une localisation!
 
   lng:
     label: longitude
@@ -112,22 +121,9 @@ fields:
     lower: true
     width: 1/3
 
-  lieudenaissance:
-    label: lieu de naissance
-    type: tags
-    index: all
-    lower: true
-    width: 1/2
 
   languematernelle:
     label: langue maternelle
-    type: tags
-    index: all
-    lower: true
-    width: 1/2
-
-  lieudevie:
-    label: lieu de vie
     type: tags
     index: all
     lower: true
@@ -152,6 +148,39 @@ fields:
     type: tags
     index: all
     lower: true
+    width: 1/2
+  lieudenaissance:
+    label: (lieu de naissance)
+    type: tags
+    index: all
+    lower: true
+    width: 1/2
+
+  lieudevie:
+    label: (lieu de vie)
+    type: tags
+    index: all
+    lower: true
+    width: 1/2
+
+  poslieudenaissance:
+    label: position lieu de naissance
+    type: map
+    center:
+      lat: 48.892423
+      lng: 2.215330999999992
+      zoom: 4
+    help: Déplacer le marqueur ou rechercher une localisation!
+    width: 1/2
+
+  poslieudevie:
+    label: position lieu de vie
+    type: map
+    center:
+      lat: 48.892423
+      lng: 2.215330999999992
+      zoom: 8
+    help: Déplacer le marqueur ou rechercher une localisation!
     width: 1/2
 
   tabrecit:
