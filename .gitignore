@@ -29,7 +29,7 @@ Icon
 /assets/avatars/*
 !/assets/avatars/index.html
 
-
+site/config/*.php
 node_modules/
 bower_components/
 thumbs/

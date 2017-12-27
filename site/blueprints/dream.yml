@@ -6,8 +6,6 @@ files:
 pages: false
 
 fields:
-
-
   tabinfo:
     label: entretien
     type: tabs
@@ -200,6 +198,42 @@ fields:
   recit:
     label: entretien édité
     type: markdown
+
+  getentities:
+    type: opener
+    command: '/api/{page.diruri.encoded}/refresh:yes'
+    text: 'Search for named entities'
+    textprogress: 'Looking for entities...'
+    textsuccess: 'Done.'
+    texterror: 'Failed.'
+
+  entities:
+    label: named entities
+    type: structure
+    entry: >
+      [{{matchedtext}}] {{entityid}} {{wikilink}} <br> {{freebasetypes}}
+    fields:
+      entityId:
+        label: entityId
+        type: text
+      matchedText:
+        label: matchedText
+        type: text
+      wikiLink:
+        label: wikiLink
+        type: text
+      startingPos:
+        label: startingPos
+        type: number
+      endingPos:
+        label: endingPos
+        type: number
+      freebaseTypes:
+        label: freebaseTypes
+         type: tags
+         index: all
+         lower: true
+
 
   tabversion:
     label: versions
