@@ -1,5 +1,17 @@
 <?php
 
+  // foreach ($site->index()->filterby('intendedtemplate','dream') as $page) {
+
+  //   dump($page->retranscripteur());
+
+  //   $newRap = $page->retranscripteur();
+  //   $newRap = strtolower($newRap);
+  //   $newRap = str_replace('lancelot hamelin', 'lancelot', $newRap);
+
+  //   $page->update(array(
+  //     'retranscripteur' => $newRap
+  //   ));
+  // }
   snippet('razor');
 
   $json = ['code' => 200, 'message' => '', 'fileurl' => ''];

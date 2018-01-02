@@ -14,6 +14,7 @@ fields:
     label: entretien
     type: tabs
 
+
   title:
     label: Title
     type:  text
@@ -36,18 +37,22 @@ fields:
     extends: timecode
     width: 1/3
 
+
+
+  # rapporteursuser:
+  #   label: rapporteurs user
+  #   extends: users
+  #   width: 1/2
+
   rapporteurs:
     label: rapporteurs
-    type: tags
-    index: all
-    lower: true
+    extends: users
     width: 1/2
+
 
   retranscripteur:
     label: retranscripteur
-    type: tags
-    index: all
-    lower: true
+    extends: users
     width: 1/2
 
   mode:

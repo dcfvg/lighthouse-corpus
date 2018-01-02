@@ -15,6 +15,10 @@ class MultiselectField extends CheckboxesField {
 
   public function __construct() {
     $this->icon = 'chevron-down';
+
+    foreach(kirby()->site()->users() as $user) {
+      $this->options[$user->username()] = $user->username();
+    }
   }
 
   public function input() {
