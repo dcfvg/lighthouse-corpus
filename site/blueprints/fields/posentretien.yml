@@ -1,0 +1,7 @@
+label: Lieu entretien
+type: map
+center:
+  lat: 48.892423
+  lng: 2.215330999999992
+  zoom: 14
+help: Déplacer le marqueur ou rechercher une localisation!

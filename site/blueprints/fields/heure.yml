@@ -1,0 +1,4 @@
+label: Heure
+type: time
+interval: 5
+default: now

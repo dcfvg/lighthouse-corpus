@@ -1,0 +1,8 @@
+label: position lieu de vie
+type: map
+center:
+  lat: 48.892423
+  lng: 2.215330999999992
+  zoom: 8
+help: Déplacer le marqueur ou rechercher une localisation!
+width: 1/2

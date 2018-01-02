@@ -1,0 +1,28 @@
+fields:
+
+  nom:
+    extends: nom
+
+  age:
+    extends: age
+
+  sexe:
+    extends: sexe
+
+  languematernelle:
+    extends: languematernelle
+
+  profession:
+    extends: profession
+
+  religionenfance:
+    extends: religionenfance
+
+  religionpresente:
+    extends: religionpresente
+
+  poslieudenaissance:
+    extends: poslieudenaissance
+
+  poslieudevie:
+    extends: poslieudevie

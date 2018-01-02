@@ -6,6 +6,10 @@ files:
 pages: false
 
 fields:
+
+# ======================
+# ENTRETIENS
+# ======================
   tabinfo:
     label: entretien
     type: tabs
@@ -20,24 +24,16 @@ fields:
     type:  number
     width: 1/4
 
-
   date:
-    label: Date
-    type: date
-    default: today
+    extends: date
     width: 1/3
 
   heure:
-    label: Heure
-    type: time
-    interval: 5
-    default: now
+    extends: heure
     width: 1/3
 
   timecode:
-    label: timecode
-    type: time
-    interval: 1
+    extends: timecode
     width: 1/3
 
   rapporteurs:
@@ -67,6 +63,7 @@ fields:
     index: all
     lower: true
     width: 1/2
+
   theme:
     label: thèmes
     type: tags
@@ -80,73 +77,47 @@ fields:
     width: 1/2
 
   posEntretien:
-    label: Lieu entretien
-    type: map
-    center:
-      lat: 48.892423
-      lng: 2.215330999999992
-      zoom: 14
-    help: Déplacer le marqueur ou rechercher une localisation!
+    extends: posentretien
 
   lng:
-    label: longitude
+    label: (longitude)
     type: text
     width: 1/4
 
   lat:
-    label: latitude
+    label: (latitude)
     type: text
     width: 1/4
+
+# ======================
+# REVEUR
+# ======================
 
   portraitreveur:
     label: rêveur
     type: tabs
 
   nom:
-    label: nom
-    type: text
-    width: 1/3
+    extends: nom
 
   age:
-    label: age
-    type: number
-    width: 1/3
+    extends: age
 
   sexe:
-    label: sexe
-    type: tags
-    index: all
-    lower: true
-    width: 1/3
-
+    extends: sexe
 
   languematernelle:
-    label: langue maternelle
-    type: tags
-    index: all
-    lower: true
-    width: 1/2
+    extends: languematernelle
 
   profession:
-    label: profession
-    type: tags
-    index: all
-    lower: true
-    width: 1/2
+    extends: profession
 
   religionenfance:
-    label: religion enfance
-    type: tags
-    index: all
-    lower: true
-    width: 1/2
+    extends: religionenfance
 
   religionpresente:
-    label: religion presente
-    type: tags
-    index: all
-    lower: true
-    width: 1/2
+    extends: religionpresente
+
   lieudenaissance:
     label: (lieu de naissance)
     type: tags
@@ -162,24 +133,14 @@ fields:
     width: 1/2
 
   poslieudenaissance:
-    label: position lieu de naissance
-    type: map
-    center:
-      lat: 48.892423
-      lng: 2.215330999999992
-      zoom: 4
-    help: Déplacer le marqueur ou rechercher une localisation!
-    width: 1/2
+    extends: poslieudenaissance
 
   poslieudevie:
-    label: position lieu de vie
-    type: map
-    center:
-      lat: 48.892423
-      lng: 2.215330999999992
-      zoom: 8
-    help: Déplacer le marqueur ou rechercher une localisation!
-    width: 1/2
+    extends: poslieudevie
+
+# ======================
+# RECIT
+# ======================
 
   tabrecit:
     label: récit
@@ -200,40 +161,14 @@ fields:
     type: markdown
 
   getentities:
-    type: opener
-    command: '/api/{page.diruri.encoded}/refresh:yes'
-    text: 'Search for named entities'
-    textprogress: 'Looking for entities...'
-    textsuccess: 'Done.'
-    texterror: 'Failed.'
+    extends: getentities
 
   entities:
-    label: named entities
-    type: structure
-    entry: >
-      [{{matchedtext}}] {{entityid}} {{wikilink}} <br> {{freebasetypes}}
-    fields:
-      entityId:
-        label: entityId
-        type: text
-      matchedText:
-        label: matchedText
-        type: text
-      wikiLink:
-        label: wikiLink
-        type: text
-      startingPos:
-        label: startingPos
-        type: number
-      endingPos:
-        label: endingPos
-        type: number
-      freebaseTypes:
-        label: freebaseTypes
-         type: tags
-         index: all
-         lower: true
+    extends: entities
 
+# ======================
+# VERSIONS
+# ======================
 
   tabversion:
     label: versions
@@ -246,4 +181,3 @@ fields:
   noncorrige:
     label: entretien non corrigé
     type: markdown
-

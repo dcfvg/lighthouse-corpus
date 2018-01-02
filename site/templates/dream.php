@@ -5,7 +5,7 @@
 
   <h1><?= $page->dreamid() ?> — <?= $page->title() ?></h1>
 
-  <div class="col-sm-5">
+  <div class="col-xs-5">
     <table class="table table-striped">
       <tbody>
 
@@ -35,7 +35,7 @@
     </table>
     </div>
 
-  <div class="col-sm-7">
+  <div class="col-xs-7">
     <h4>situation</h4>
     <?= $page->situation()->kirbytext()?>
     <h4>entretien édité</h4>

@@ -1,0 +1,6 @@
+type: opener
+command: '/api/{page.diruri.encoded}/refresh:yes'
+text: 'Search for named entities'
+textprogress: 'Looking for entities...'
+textsuccess: 'Done.'
+texterror: 'Failed.'

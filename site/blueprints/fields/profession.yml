@@ -1,0 +1,5 @@
+label: profession
+type: tags
+index: all
+lower: true
+width: 1/2

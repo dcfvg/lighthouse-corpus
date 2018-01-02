@@ -1,0 +1,25 @@
+label: named entities
+type: structure
+entry: >
+  [{{matchedtext}}] {{entityid}} {{wikilink}} <br> {{freebasetypes}}
+fields:
+  entityId:
+    label: entityId
+    type: text
+  matchedText:
+    label: matchedText
+    type: text
+  wikiLink:
+    label: wikiLink
+    type: text
+  startingPos:
+    label: startingPos
+    type: number
+  endingPos:
+    label: endingPos
+    type: number
+  freebaseTypes:
+    label: freebaseTypes
+     type: tags
+     index: all
+     lower: true

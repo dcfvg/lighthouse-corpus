@@ -1,0 +1,5 @@
+label: sexe
+type: tags
+index: all
+lower: true
+width: 1/3
