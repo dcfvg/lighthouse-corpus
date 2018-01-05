@@ -1,4 +1,5 @@
 console.log("Hello o O O O !");
+document.getElementsByTagName('body').item(0).classList.toggle("preview");
 
 // Events
 document.onkeypress = function (oPEvt) {

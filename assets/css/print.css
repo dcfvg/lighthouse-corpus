@@ -1,4 +1,12 @@
 .content {
-  font-family: 'Karla', sans-serif;
   font-size: 12px;
+  line-height: 16px;
+}
+.content h4 {
+  font-size: 12px;
+}
+.content .meta {
+  background-color: black;
+  color: white;
+  padding: 10px;
 }

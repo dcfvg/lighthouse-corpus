@@ -13,7 +13,7 @@
 </head>
 <body class="<?php echo $page->template() ?>">
 
-  <header class="container" role="banner">
+  <header class="hidden-print container" role="banner">
       <div class="branding column">
         <a href="<?= url() ?>" rel="home"><?= $site->title()->html() ?></a>
       </div>

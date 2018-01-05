@@ -1,52 +1,38 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8" />
-  <title>Pantoufle</title>
+<?php snippet('header') ?>
+
     <?= css('assets/css/pantoufle.css') ?>
     <?= css('assets/css/print.css') ?>
-</head>
-<body>
-
   <!-- start page -->
   <section class="page">
     <div class="content">
-
-    <table class="table table-striped">
-      <tbody>
-
-        <tr><th>date</th><td><?= $page->date('d/m/Y')?></td></tr>
-        <tr><th>heure</th><td><?= $page->heure()?></td></tr>
-        <tr><th>timecode</th><td><?= $page->timecode()?></td></tr>
-        <tr><th>rapporteurs</th><td><?= $page->rapporteurs()?></td></tr>
-        <tr><th>retranscripteur</th><td><?= $page->retranscripteur()?></td></tr>
-        <tr><th>mode</th><td><?= $page->mode()?></td></tr>
-        <tr><th>nature</th><td><?= $page->nature()?></td></tr>
-        <tr><th>theme</th><td><?= $page->theme()?></td></tr>
-        <tr><th>lieu</th><td><?= $page->lieu()?></td></tr>
-        <tr><th>lng</th><td><?= $page->lng()?></td></tr>
-        <tr><th>lat</th><td><?= $page->lat()?></td></tr>
-        <tr><th>portraitreveur</th><td><?= $page->portraitreveur()?></td></tr>
-
-        <tr><th>nom</th><td><?= $page->nom()?></td></tr>
-        <tr><th>age</th><td><?= $page->age()?></td></tr>
-        <tr><th>sexe</th><td><?= $page->sexe()?></td></tr>
-        <tr><th>lieudenaissance</th><td><?= $page->lieudenaissance()?></td></tr>
-        <tr><th>languematernelle</th><td><?= $page->languematernelle()?></td></tr>
-        <tr><th>lieudevie</th><td><?= $page->lieudevie()?></td></tr>
-        <tr><th>profession</th><td><?= $page->profession()?></td></tr>
-        <tr><th>religionenfance</th><td><?= $page->religionenfance()?></td></tr>
-        <tr><th>religionpresente</th><td><?= $page->religionpresente()?></td></tr>
-      </tbody>
-    </table>
+      <div class="meta">
       <?php if($user = $site->user()): ?>
 
-            <h4>situation</h4>
-            <?= $page->situation()->kirbytext()?>
-            <h4>entretien édité</h4>
-            <?= $page->recit()->kirbytext()?>
-            <h4>entretien brut</h4>
-            <?= $page->retranscription()->kirbytext() ?>
+        <p><?= $page->date('d/m/Y')?>, <?= $page->heure()?></p>
+        <p><strong>rapporteurs</strong><br><?= $page->rapporteurs()?></p>
+        <p><strong>retranscripteur</strong><br><?= $page->retranscripteur()?></p>
+        <p><strong>theme</strong><br><?= $page->theme()?></p>
+        <p><strong>le rêveur</strong></p>
+        <p><?= $page->portraitreveur()?></p>
+
+        <p><?= $page->nom()?>, <?= $page->sexe()?>, <?= $page->age()?> ans, <?= $page->profession()?>/</p>
+
+        <p>né(e) à <?= $page->lieudenaissance()?>
+            avec pour langue maternelle le
+            <?= $page->languematernelle()?> et pour religion d'enfance <?= $page->religionenfance()?> (aujourd'hui <?= $page->religionpresente()?></p>
+        <p>
+
+        <p> vit à <?= $page->lieudevie()?></p>
+            </p>
+
+        </div>
+        <hr>
+        <h4>situation</h4>
+            <p><?= $page->situation()->kirbytext()?></p>
+        <h4>entretien édité</h4>
+            <p><?= $page->recit()->kirbytext()?></p>
+        <h4>entretien brut</h4>
+            <p><?= $page->retranscription()->kirbytext() ?></p>
         <?php endif ?>
 
 
