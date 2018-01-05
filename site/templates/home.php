@@ -2,10 +2,6 @@
 
 <?php if($user = $site->user()): ?>
 
-    <?php $tags = $site->index()->filterby('intendedtemplate','dream')->pluck('rapporteurs', ',');
-        dump(array_unique ($tags));
-    ?>
-
     <table class="table table-striped">
       <tbody>
         <?php foreach($site->index()->filterby('intendedtemplate','dream')->visible() as $item): ?>

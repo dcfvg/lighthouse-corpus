@@ -1,17 +1,11 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8" />
-  <title>Pantoufle</title>
-    <?= css('assets/css/pantoufle.css') ?>
-    <?= css('assets/css/print.css') ?>
-</head>
-<body>
+<?php snippet('header') ?>
 
-  <!-- start page -->
-  <section class="page">
-    <div class="content">
+<div class="container">
+  <?php if($user = $site->user()): ?>
 
+  <h1><?= $page->dreamid() ?> — <?= $page->title() ?></h1>
+
+  <div class="col-xs-5">
     <table class="table table-striped">
       <tbody>
 
@@ -39,23 +33,25 @@
         <tr><th>religionpresente</th><td><?= $page->religionpresente()?></td></tr>
       </tbody>
     </table>
-      <?php if($user = $site->user()): ?>
-
-            <h4>situation</h4>
-            <?= $page->situation()->kirbytext()?>
-            <h4>entretien édité</h4>
-            <?= $page->recit()->kirbytext()?>
-            <h4>entretien brut</h4>
-            <?= $page->retranscription()->kirbytext() ?>
-        <?php endif ?>
-
-
     </div>
-  </section>
-  <!-- end page -->
 
-  <?= js('assets/js/pantoufle.js') ?>
-</body>
-</html>
+  <div class="col-xs-7">
+    <h4>situation</h4>
+    <?= $page->situation()->kirbytext()?>
+    <h4>entretien édité</h4>
+    <?= $page->recit()->kirbytext()?>
+    <h4>entretien brut</h4>
+    <?= $page->retranscription()->kirbytext() ?>
+  </div>
+</div>
+
+
+
+
+
+
+
+</div>
+<?php endif ?>
 
 <?php snippet('footer') ?>
