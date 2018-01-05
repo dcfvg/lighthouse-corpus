@@ -5,14 +5,11 @@
   <!-- start page -->
   <section class="page">
     <div class="content">
-      <div class="meta">
       <?php if($user = $site->user()): ?>
 
-        <p><?= $page->date('d/m/Y')?>, <?= $page->heure()?></p>
-        <p><strong>rapporteurs</strong><br><?= $page->rapporteurs()?></p>
-        <p><strong>retranscripteur</strong><br><?= $page->retranscripteur()?></p>
-        <p><strong>theme</strong><br><?= $page->theme()?></p>
-        <p><strong>le rêveur</strong></p>
+
+
+        <h4>le rêveur</h4>
         <p><?= $page->portraitreveur()?></p>
 
         <p><?= $page->nom()?>, <?= $page->sexe()?>, <?= $page->age()?> ans, <?= $page->profession()?>/</p>
@@ -20,19 +17,23 @@
         <p>né(e) à <?= $page->lieudenaissance()?>
             avec pour langue maternelle le
             <?= $page->languematernelle()?> et pour religion d'enfance <?= $page->religionenfance()?> (aujourd'hui <?= $page->religionpresente()?></p>
-        <p>
+        </p>
 
         <p> vit à <?= $page->lieudevie()?></p>
-            </p>
 
-        </div>
-        <hr>
+        <h4>collecteurs</h4>
+        <p><?= $page->rapporteurs()?> (rapporteur)
+        <br><?= $page->retranscripteur()?> (retranscripteur)</p>
+
         <h4>situation</h4>
-            <p><?= $page->situation()->kirbytext()?></p>
-        <h4>entretien édité</h4>
+
+            <p><?= $page->date('d/m/Y')?>, <?= $page->heure()?>
+            <br><?=$page->posEntretien()->yaml()['address']?></p>
+
+            <p><em><?= $page->situation()->kirbytext()?></em></p>
+        <h4>entretien</h4>
             <p><?= $page->recit()->kirbytext()?></p>
-        <h4>entretien brut</h4>
-            <p><?= $page->retranscription()->kirbytext() ?></p>
+
         <?php endif ?>
 
 
