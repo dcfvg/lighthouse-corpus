@@ -1,0 +1,163 @@
+/* =Pantoufle
+ * v0.4.3. thermal printer edition
+ * ---------------------------------------------------------------------------*/
+/* =Screen
+*/
+@media screen {
+  *,
+  *::after,
+  *::before {
+    box-sizing: border-box;
+  }
+  html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+  }
+  body {
+    margin: 0;
+    background-color: #606060;
+  }
+  body:before,
+  body:after {
+    content: " ";
+    display: table;
+  }
+  body:after {
+    clear: both;
+  }
+  body:before,
+  body:after {
+    content: " ";
+    display: table;
+  }
+  body:after {
+    clear: both;
+  }
+}
+/* =Print
+*/
+@media print {
+  *,
+  *::after,
+  *::before {
+    box-sizing: border-box;
+  }
+  @page {
+    size: portrait;
+    margin: 0mm;
+  }
+  html,
+  body {
+    background-color: transparent;
+    margin: 0;
+  }
+  .page {
+    width: 100vw;
+    height: 100vh;
+  }
+}
+.page {
+  position: relative;
+  overflow: hidden;
+}
+@media screen {
+  .page {
+    margin-top: 2cm;
+    background-color: #fff;
+    margin-right: 2cm;
+    margin-left: 2cm;
+    width: 58mm;
+    height: auto;
+  }
+  .page:first-of-type {
+    margin-right: 2cm !important;
+    margin-left: 2cm !important;
+  }
+  .page:last-of-type {
+    margin-bottom: 2cm;
+  }
+}
+@media print {
+  .page {
+    width: 48mm;
+    height: auto;
+  }
+  @page {
+    size: 48mm auto;
+  }
+}
+.page .content {
+  position: static !important;
+  overflow: hidden;
+  height: calc(100% - 10mm);
+  margin-top: 5mm;
+  margin-bottom: 5mm;
+}
+@media screen {
+  .page {
+    box-shadow: 2px 2px 0px 1px #000, 0px 0px 0px 1px #000;
+  }
+  .page .content {
+    width: calc(100% - 10mm);
+  }
+  .page .content {
+    margin-left: 5mm;
+    margin-right: 5mm;
+  }
+  .page::before {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 2;
+    top: 5mm;
+    bottom: 5mm;
+    border: 1px solid;
+    border-color: #60c600 #738a5e;
+    pointer-events: none;
+  }
+  .page::before {
+    left: 5mm;
+    right: 5mm;
+  }
+}
+.hide {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+@media screen {
+  body {
+    transform-origin: top left;
+    transform: scale(0.95);
+    transition: background-color 0.1s;
+  }
+  body .page::before {
+    transition: opacity 0.1s;
+  }
+  body.preview {
+    background-color: #bababa;
+  }
+  body.preview .page::before {
+    opacity: 0;
+  }
+  body .page::before {
+    transition: opacity 0.1s;
+  }
+  body.preview .page::before {
+    opacity: 0;
+  }
+}

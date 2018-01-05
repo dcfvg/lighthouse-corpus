@@ -1,0 +1,263 @@
+.make-page-ready(@margin-top: @page-margin-top,
+                 @margin-outside: @page-margin-outside,
+                 @margin-bottom: @page-margin-bottom,
+                 @margin-inside: @page-margin-inside,
+                 @width: @page-width,
+                 @height: @page-height,
+                 @interface-padding: @interface-padding) {
+
+  position: relative;
+
+  overflow: hidden;
+
+  & when (@hard-size-mode = false) or ((@hard-size-mode = true) and (@thermal-printer-mode = false)) {
+    width: @width;
+    height: @height;
+  }
+
+  @media screen {
+
+    & when (@preview = true) {
+
+      margin-top: @interface-padding;
+      background-color: #fff;
+
+      // First page
+      &:first-of-type
+      {
+        margin-right: @interface-padding!important;
+
+        & when (@facing-pages = false) {
+          margin-left: @interface-padding!important;
+        }
+
+        & when (@facing-pages = true) {
+          margin-left: @width + @interface-padding!important;
+        }
+
+      }
+
+      // Last page
+      &:last-of-type when (@preview = true)
+      {
+        margin-bottom: @interface-padding;
+      }
+
+      & when (@facing-pages = false) {
+
+        margin-right: @interface-padding;
+        margin-left: @interface-padding;
+
+      }
+
+      & when (@facing-pages = true) {
+
+        float:left;
+
+        // even page
+        &:nth-of-type(even)
+        {
+          margin-left: @interface-padding;
+        }
+
+        // odd page
+        &:nth-of-type(odd)
+        {
+          margin-right: @interface-padding;
+        }
+
+      }
+
+    }
+
+    & when (@preview = false) {
+
+      & when (@ui-helper = true) {
+
+        margin-top: 1px;
+        margin-right: 1px;
+        margin-bottom: 2px;
+        margin-left: 2px;
+
+      }
+
+    }
+
+    & when (@hard-size-mode = true) and (@thermal-printer-mode = true) {
+      width: @width;
+      height: @height;
+    }
+
+  }
+
+
+  & when (@hard-size-mode = true) {
+
+    @media print {
+
+      & when (@hard-size-mode = true) and (@thermal-printer-mode = true) {
+        width: @width - (@margin-outside + @margin-inside);
+        height: @height;
+      }
+
+      @page
+      {
+        & when (@thermal-printer-mode = false) {
+          size: @width @height;
+        }
+        & when (@thermal-printer-mode = true) {
+          size: (@width - (@margin-outside + @margin-inside)) @height;
+        }
+      }
+
+    } // @media print
+
+  }
+};
+
+
+.make-page-margin(@margin-top: @page-margin-top,
+                  @margin-outside: @page-margin-outside,
+                  @margin-bottom: @page-margin-bottom,
+                  @margin-inside: @page-margin-inside) {
+
+  @inner-width: calc(100% ~"-" @margin-outside + @margin-inside);
+  @inner-height: calc(100% ~"-" @margin-top + @margin-bottom);
+
+  & when (@hard-size-mode = false) or ((@hard-size-mode = true) and (@thermal-printer-mode = false)) {
+
+    .content {
+      position: static !important;
+      overflow: hidden;
+      width: @inner-width;
+      height: @inner-height;
+      margin-top: @margin-top;
+      margin-bottom: @margin-bottom;
+    }
+
+    // About margin for odd and even pages.
+
+    & when (@facing-pages = false) {
+      .content {
+        margin-left: @margin-inside;
+        margin-right: @margin-outside;
+      }
+    }
+
+    & when (@facing-pages = true) {
+      // odd page
+      &:nth-of-type(odd)
+      {
+        .content {
+          margin-left: @margin-inside;
+          margin-right: @margin-outside;
+        }
+      }
+      // even page
+      &:nth-of-type(even)
+      {
+        .content {
+          margin-left: @margin-outside;
+          margin-right: @margin-inside;
+        }
+      }
+    }
+  }
+
+  & when (@hard-size-mode = true) and (@thermal-printer-mode = true) {
+    .content {
+      position: static !important;
+      overflow: hidden;
+      height: @inner-height;
+      margin-top: @margin-top;
+      margin-bottom: @margin-bottom;
+    }
+  }
+
+
+
+
+  @media screen {
+
+    & when (@hard-size-mode = true) and (@thermal-printer-mode = true) {
+      .content {
+        width: @inner-width;
+      }
+
+      // About margin for odd and even pages.
+
+      & when (@facing-pages = false) {
+        .content {
+          margin-left: @margin-inside;
+          margin-right: @margin-outside;
+        }
+      }
+
+      & when (@facing-pages = true) {
+        // odd page
+        &:nth-of-type(odd)
+        {
+          .content {
+            margin-left: @margin-inside;
+            margin-right: @margin-outside;
+          }
+        }
+        // even page
+        &:nth-of-type(even)
+        {
+          .content {
+            margin-left: @margin-outside;
+            margin-right: @margin-inside;
+          }
+        }
+      }
+    }
+
+    & when (@ui-helper = true) {
+
+      // U.I. Helper
+      & {
+        box-shadow: 2px 2px 0px 1px #000, 0px 0px 0px 1px #000;
+      }
+
+      &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        z-index: 2;
+        top: @margin-top;
+        bottom: @margin-bottom;
+        border: 1px solid;
+        border-color: rgb(96,198,0) rgb(115,138,94);
+        pointer-events: none;
+      }
+
+      & when (@facing-pages = false) {
+
+        // U.I. Helper
+        &::before {
+          left: @margin-outside;
+          right: @margin-inside;
+        }
+
+      }
+
+      & when (@facing-pages = true) {
+
+        // U.I. Helper
+        &:nth-of-type(odd)::before {
+          left: @margin-inside;
+          right: @margin-outside;
+        }
+        &:nth-of-type(even)::before {
+          left: @margin-outside;
+          right: @margin-inside;
+        }
+
+      }
+
+    }
+
+  }
+
+};
