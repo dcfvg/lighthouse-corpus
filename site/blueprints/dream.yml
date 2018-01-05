@@ -77,7 +77,7 @@ fields:
     width: 1/2
 
   lieu:
-    label: (description du lieu)
+    label: détail du lieu
     type: text
     width: 1/2
 
