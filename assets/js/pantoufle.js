@@ -11,3 +11,10 @@ document.onkeypress = function (oPEvt) {
       break;
   }
 };
+
+
+var elmnt = document.getElementById('ticket');
+elmnt.innerHTML = elmnt.innerHTML.replace(
+  /<p>-([A-Z](.)+) :/g,
+  '<span class="person">$1</span>&nbsp;:&nbsp;'
+);
