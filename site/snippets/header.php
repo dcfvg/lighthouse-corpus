@@ -8,7 +8,6 @@
   <title><?= $site->title()->html() ?> | <?= $page->title()->html() ?></title>
   <meta name="description" content="<?= $site->description()->html() ?>">
 
-  <?= css('assets/css/screen.css') ?>
 
 </head>
 <body class="<?php echo $page->template() ?>">

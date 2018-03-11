@@ -13,12 +13,14 @@ gulp.task('serve', function() {
     });
   });
   gulp.watch('./assets/less/*.less', ['less']);
+  gulp.watch('./assets/less/*/*.less', ['less']);
   gulp.watch('**/*.php').on('change', function () { browserSync.reload();});
   gulp.watch('./assets/js/*.js').on('change', function () { browserSync.reload();});
 });
 
 gulp.task('watch', function() {
   gulp.watch('./assets/less/*.less', ['less']);
+  gulp.watch('./assets/less/*/*.less', ['less']);
 });
 
 gulp.task('less', function() {
@@ -37,10 +39,8 @@ gulp.task('less', function() {
 gulp.task('js', function() {
     return gulp.src([
       './bower_components/jquery/dist/jquery.min.js',
-      './bower_components/jquery/dist/jquery.min.js',
-      './bower_components/jquery/dist/jquery.min.js',
-      './bower_components/lodash/lodash.js',
       './bower_components/bootstrap/dist/js/bootstrap.js',
+      './bower_components/JsBarcode/dist/JsBarcode.all.min.js'
     ])
     .pipe(concat('all.min.js'))
     // .pipe(uglify())

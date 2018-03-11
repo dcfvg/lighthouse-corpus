@@ -117,6 +117,11 @@ fields:
   profession:
     extends: profession
 
+  portraitredac:
+    label: portrait du rêveur
+    type: textarea
+    width: 1/2
+
   religionenfance:
     extends: religionenfance
 
@@ -152,7 +157,7 @@ fields:
     type: tabs
 
   situation:
-    label: situation
+    label: impression de la rencontre
     type: textarea
     width: 1/2
 
@@ -163,6 +168,10 @@ fields:
 
   recit:
     label: entretien édité
+    type: markdown
+
+  noteauteur:
+    label: note de l'auteur
     type: markdown
 
   getentities:

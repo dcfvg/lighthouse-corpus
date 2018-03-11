@@ -1,7 +1,6 @@
 <?php snippet('header') ?>
 
-<?php if($user = $site->user()): ?>
-
+  <?= css('assets/css/screen.css') ?>
     <table class="table table-striped">
       <tbody>
         <?php foreach($site->index()->filterby('intendedtemplate','dream')->visible() as $item): ?>
@@ -24,5 +23,4 @@
         <?php endforeach ?>
       </tbody>
     </table>
-<?php endif ?>
 <?php snippet('footer') ?>

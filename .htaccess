@@ -51,3 +51,7 @@ RewriteRule ^(.*) index.php [L]
 # AddDefaultCharset UTF-8
 #
 # php_flag short_open_tag on
+AuthType Basic
+AuthName "light house radio"
+AuthUserFile "/home/dcfvgfr/.htpasswds/public_html/_clients/lighthouse.dcfvg.fr/passwd"
+require valid-user
