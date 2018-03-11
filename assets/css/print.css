@@ -6732,11 +6732,17 @@ button.close {
 .content h5 {
   text-align: center;
   font-family: Roboto;
-  font-size: 1.5em;
+  font-size: 1.3em;
+}
+.content h1 {
+  margin: 50px 0 50px;
+}
+.content h3 {
+  font-size: 1em;
 }
 .content .cover {
   text-align: center;
-  margin: 100px 0 100px;
+  margin: 0 0 100px;
 }
 .content .metadata {
   font-family: Roboto;
@@ -6748,6 +6754,9 @@ button.close {
 .dreamIndex {
   text-align: center;
 }
+.dreamIndex .codeTitle {
+  margin-top: 10px;
+}
 .dreams {
-  font-size: 1.1em;
+  font-size: 1em;
 }
