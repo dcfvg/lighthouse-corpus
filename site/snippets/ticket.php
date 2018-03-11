@@ -33,6 +33,9 @@
     <h3>entretien</h3>
     <p><?= $page->recit()->kirbytext()?></p>
 
+    <h3>note de l'auteur</h3>
+    <p><?= $page->noteauteur()->kirbytext()?></p>
+
     <h1><?php snippet('barcode', array('page' => $page)); ?></h1>
   <?php else: ?>
     Rêve n° <?= $id?> introuvable …
