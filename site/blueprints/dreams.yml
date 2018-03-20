@@ -4,6 +4,7 @@ files: false
 
 pages:
   template: dream
+  limit: 100
 
 options:
   template: true

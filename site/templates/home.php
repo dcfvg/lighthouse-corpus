@@ -3,7 +3,7 @@
   <?= css('assets/css/screen.css') ?>
     <table class="table table-striped">
       <tbody>
-        <?php foreach($site->index()->filterby('intendedtemplate','dream')->visible() as $item): ?>
+        <?php foreach($site->index()->filterby('intendedtemplate','dream')->sortBy("dreamid")->visible() as $item): ?>
 
           <tr>
             <td><?= $item->dreamid()?></td>

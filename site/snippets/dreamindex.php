@@ -11,12 +11,13 @@
      jsbarcode-fontSize="8"
   ></svg>
 
-  <?php foreach($site->index()->filterby('intendedtemplate','dream')->visible() as $item): ?>
+  <?php foreach($site->index()->filterby('intendedtemplate','dream')->visible()->sortBy('dreamid','asc') as $item): ?>
 
     <div class="row">
 
       <div class="col-xs-6">
-        <p class="codeTitle" ><?= $item->title() ?></p>
+        <!-- <p class="codeTitle" ><a href="<?= $page->url()?>/dreamid:<?= $item->dreamid() ?>"> <?= $item->title() ?> </a></p> -->
+        <h2 class="codeTitle" ><?= $item->title() ?></h2>
       </div>
 
       <div class="col-xs-6">

@@ -6722,8 +6722,13 @@ button.close {
     display: none !important;
   }
 }
+a {
+  text-decoration: none;
+  color: black;
+}
 .content {
   font-family: Spectral;
+  font-weight: 600;
 }
 .content h1,
 .content h2,
