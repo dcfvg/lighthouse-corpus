@@ -13,7 +13,7 @@
 
         // css('assets/css/pantoufle.css');
       } else {
-        snippet('dreamIndex');
+        snippet('dreamindex');
       }
     ?>
   </section>
