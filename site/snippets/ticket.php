@@ -8,10 +8,10 @@
     </div>
 
     <p class="metadata">
-      <strong>date du recueil : </strong><?= $page->date('d/m/Y')?>
-      <br/><strong>heure :</strong><?= $page->heure()?>
-      <br/><strong>rapporteur du rêve : </strong><?= $page->rapporteurs()?>
-      <br/><strong>retranscription par : </strong><?= $page->retranscripteur()?>
+      <strong>Date du recueil : </strong><?= $page->date('d/m/Y')?>
+      <br/><strong>Heure :</strong><?= $page->heure()?>
+      <br/><strong>Rapporteur du rêve : </strong><?= $page->rapporteurs()?>
+      <br/><strong>Retranscription par : </strong><?= $page->retranscripteur()?>
       <br/><strong>Lieu du recueil du récit :</strong>
       <?php
 
@@ -23,17 +23,19 @@
       <br/><strong>Nom du/de la rêveur.se :</strong> <?= $page->nom()?>
     </p>
 
-    <h3>portrait du/de la rêveur.se</h3>
+    <h3>Portrait du/de la rêveur.se</h3>
     <p><?= $page->portraitredac()->kirbytext()?></p>
 
-    <h3>impression de la rencontre</h3>
+    <h3>Impression de la rencontre</h3>
     <p><em><?= $page->situation()->kirbytext()?></em></p>
 
 
-    <h3>entretien</h3>
+    <h3>Entretien</h3>
     <p><?= $page->recit()->kirbytext()?></p>
+    <?php if(!$page->noteauteur()->empty()): ?>
 
-    <h3>note de l'auteur</h3>
+    <h3>Note de l'auteur</h3>
+    <?php endif ?>
     <p><?= $page->noteauteur()->kirbytext()?></p>
 
     <h1><?php snippet('barcode', array('page' => $page)); ?></h1>

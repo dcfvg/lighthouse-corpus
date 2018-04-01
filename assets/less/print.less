@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i|Spectral:400,400i,600,600i');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i,900,900i|Spectral:400,400i,600,600i');
 
 @import '../../bower_components/bootstrap/less/bootstrap.less';
 @import 'variables.less';
@@ -16,10 +16,13 @@ a {
     text-align: center;
     font-family: Roboto;
     font-size: 1.3em;
+    font-weight: 700;
   }
 
   h1 {
    margin: 50px 0 50px;
+   font-size: 4em;
+   font-weight: 400;
   }
   h3 {
     font-size: 1em;
@@ -30,9 +33,10 @@ a {
   }
   .metadata {
    font-family: Roboto;
+   font-weight: 400;
    strong {
     font-family: Roboto;
-    font-weight: bold;
+    font-weight: 700;
    }
   }
 }
@@ -43,6 +47,8 @@ a {
 
   .row {
     // border-bottom: 1px black solid;
+    margin-top: 0.5em;
+
   }
   .barcodebox {
     text-align: right;
@@ -61,4 +67,15 @@ a {
 
 .dreams {
   font-size: 1em;
+  line-height: 1.3em;
+}
+
+.person {
+  margin-top: 0em;
+  display: inline-block;
+  // min-width: 50%;
+  // padding: 1px 3px 1px 3px;
+  font-weight: bold;
+  // text-decoration: underline;
+  font-family: 'Roboto', sans-serif;
 }

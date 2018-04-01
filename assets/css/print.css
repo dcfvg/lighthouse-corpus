@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i|Spectral:400,400i,600,600i');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i,900,900i|Spectral:400,400i,600,600i');
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
@@ -6738,9 +6738,12 @@ a {
   text-align: center;
   font-family: Roboto;
   font-size: 1.3em;
+  font-weight: 700;
 }
 .content h1 {
   margin: 50px 0 50px;
+  font-size: 4em;
+  font-weight: 400;
 }
 .content h3 {
   font-size: 1em;
@@ -6751,13 +6754,17 @@ a {
 }
 .content .metadata {
   font-family: Roboto;
+  font-weight: 400;
 }
 .content .metadata strong {
   font-family: Roboto;
-  font-weight: bold;
+  font-weight: 700;
 }
 .dreamIndex {
   text-align: center;
+}
+.dreamIndex .row {
+  margin-top: 0.5em;
 }
 .dreamIndex .barcodebox {
   text-align: right;
@@ -6772,4 +6779,11 @@ a {
 }
 .dreams {
   font-size: 1em;
+  line-height: 1.3em;
+}
+.person {
+  margin-top: 0em;
+  display: inline-block;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
 }

@@ -11,8 +11,9 @@
      jsbarcode-fontSize="8"
   ></svg>
 
-  <?php foreach($site
-    ->index()
+  <?php foreach($page
+    ->children()
+    ->visible()
     ->filterby('intendedtemplate','dream')
     ->filter(function($it){
       return $it
@@ -20,7 +21,7 @@
         ->isNotEmpty();
     })
     ->visible()
-    ->sortBy('dreamid','desc') as $item): ?>
+    ->sortBy('dreamid','asc') as $item): ?>
 
     <div class="row">
       <div class="col-xs-8">

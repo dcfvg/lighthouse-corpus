@@ -8,7 +8,7 @@
       $params = params();
       if(isset($params['dreamid'])) {
 
-        $p = $site->index()->filterby('dreamid', $params['dreamid'])->first();
+        $p = $page->children()->filterby('dreamid', $params['dreamid'])->first();
           snippet('ticket', array('page' => $p, 'id' => $params['dreamid']));
 
         // css('assets/css/pantoufle.css');
