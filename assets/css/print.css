@@ -6722,6 +6722,12 @@ button.close {
     display: none !important;
   }
 }
+.marker {
+  height: 0;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
 a {
   text-decoration: none;
   color: black;
@@ -6764,7 +6770,9 @@ a {
   text-align: center;
 }
 .dreamIndex .row {
-  margin-top: 0.5em;
+  text-align: left;
+  padding-top: 1em;
+  border-bottom: 1px dotted black;
 }
 .dreamIndex .barcodebox {
   text-align: right;
@@ -6786,4 +6794,14 @@ a {
   display: inline-block;
   font-weight: bold;
   font-family: 'Roboto', sans-serif;
+}
+@media print {
+  /* All styles for print should goes here */
+  .printA4 {
+    zoom: 125%;
+    max-width: 80%;
+  }
+  .printA4 * {
+    line-height: 1.5em;
+  }
 }

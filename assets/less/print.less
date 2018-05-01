@@ -3,7 +3,12 @@
 @import '../../bower_components/bootstrap/less/bootstrap.less';
 @import 'variables.less';
 
-
+.marker {
+  height: 0;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
 a {
   text-decoration: none;
   color: black;
@@ -44,23 +49,28 @@ a {
 
 .dreamIndex {
   text-align: center;
-
   .row {
     // border-bottom: 1px black solid;
-    margin-top: 0.5em;
+    text-align: left;
+    padding-top: 1em;
+    border-bottom: 1px dotted black;
 
   }
+  // .name {text-align: left;}
   .barcodebox {
     text-align: right;
   }
   h2 {
     text-align: left;
-    margin-top: 0;
-    font-size: 1em ;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+      margin-top: 0;
+        font-size: 1em ;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          // height: 1.5em;
+
   }
+
 }
 
 // body {   transform: scale(.7);}
@@ -78,4 +88,16 @@ a {
   font-weight: bold;
   // text-decoration: underline;
   font-family: 'Roboto', sans-serif;
+}
+
+@media print{
+	/* All styles for print should goes here */
+  .printA4  {
+    zoom: 125%;
+    max-width: 80%;
+    * {
+      line-height: 1.5em;
+    }
+  }
+
 }

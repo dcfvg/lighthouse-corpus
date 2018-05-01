@@ -2,8 +2,18 @@
   <?= css('assets/css/print.css') ?>
 
   <!-- start page -->
-  <section class="page dreams container">
+  <section class="<?php
+
+      $mystring =  $_SERVER['HTTP_USER_AGENT'];
+      $findme   = 'PhantomJS';
+      $pos = strpos($mystring, $findme);
+
+      if ($pos === false) echo "printA4"
+    ?> page dreams container">
+    <p class="marker">.</p>
     <?php
+
+
       // print_r(params());
       $params = params();
       if(isset($params['dreamid'])) {
