@@ -1,4 +1,7 @@
-label: position lieu de naissance
+label: 
+  fr: position lieu de naissance
+  en: Place of birth
+  ar: مكان ولادة
 type: map
 center:
   lat: 48.892423

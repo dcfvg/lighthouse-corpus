@@ -1,3 +1,7 @@
-label: nom
+label:
+  fr: nom
+  en: name
+  ar: اسم
+
 type: text
 width: 1/2

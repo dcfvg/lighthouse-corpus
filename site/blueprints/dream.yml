@@ -11,17 +11,26 @@ fields:
 # ENTRETIENS
 # ======================
   tabinfo:
-    label: entretien
+    label:
+      fr: entretien
+      en: interview
+      ar: صيانة
+
     type: tabs
 
-
   title:
-    label: Title
+    label:
+      fr: titre
+      en: title
+      ar: لقب
     type:  text
     width: 3/4
 
   dreamid:
-    label: Numero Rêve
+    label:
+      fr: numéro Rêve
+      en: dream's number
+      ar: رقم الحلم
     type:  number
     width: 1/4
 
@@ -37,69 +46,86 @@ fields:
     extends: timecode
     width: 1/3
 
-
-
   # rapporteursuser:
   #   label: rapporteurs user
   #   extends: users
   #   width: 1/2
 
   rapporteurs:
-    label: rapporteurs
+    label:
+      fr: rapporteurs
+      en: interviewer
+      ar: منقلة
     extends: users
     width: 1/2
 
 
   retranscripteur:
-    label: retranscripteur
+    label:
+      fr: transcripteur
+      en: transcriber
+      ar: النساخ
     extends: users
     width: 1/2
+  #
+  # mode:
+  #   label: Mode
+  #   type: tags
+  #   index: all
+  #   lower: true
+  #   width: 1/2
 
-  mode:
-    label: Mode
-    type: tags
-    index: all
-    lower: true
-    width: 1/2
-
-  nature:
-    label: nature du rêve
-    type: tags
-    index: all
-    lower: true
-    width: 1/2
+  # nature:
+  #   label:
+  #     fr: nature du rêve
+  #     en: nature of the dream
+  #     ar: طبيعة الحلم
+  #
+  #   type: tags
+  #   index: all
+  #   lower: true
+  #   width: 1/2
 
   theme:
-    label: thèmes
+    label:
+      fr: thèmes
+      en: theme
+      ar: المواضيع
     type: tags
     index: all
     lower: true
     width: 1/2
 
   lieu:
-    label: détail du lieu
+    label:
+      fr: description du lieu
+      en: location description
+      ar: وصف الموقع
     type: text
     width: 1/2
 
   posEntretien:
     extends: posentretien
 
-  lng:
-    label: (longitude)
-    type: text
-    width: 1/4
-
-  lat:
-    label: (latitude)
-    type: text
-    width: 1/4
+  # lng:
+  #   label: (longitude)
+  #   type: text
+  #   width: 1/4
+  #
+  # lat:
+  #   label: (latitude)
+  #   type: text
+  #   width: 1/4
 
 # ======================
 # REVEUR
 # ======================
 
   portraitreveur:
-    label: rêveur
+    label:
+      fr: rêveur
+      en: dreamer
+      ar: حالم
     type: tabs
 
   nom:
@@ -118,7 +144,11 @@ fields:
     extends: profession
 
   portraitredac:
-    label: portrait du rêveur
+    label:
+      fr: Portrait du/de la rêveur.se
+      en: Portrait of the dreamer
+      ar: صورة للحالم
+
     type: textarea
     width: 1/2
 
@@ -128,19 +158,19 @@ fields:
   religionpresente:
     extends: religionpresente
 
-  lieudenaissance:
-    label: (lieu de naissance)
-    type: tags
-    index: all
-    lower: true
-    width: 1/2
-
-  lieudevie:
-    label: (lieu de vie)
-    type: tags
-    index: all
-    lower: true
-    width: 1/2
+  # lieudenaissance:
+  #   label: (lieu de naissance)
+  #   type: tags
+  #   index: all
+  #   lower: true
+  #   width: 1/2
+  #
+  # lieudevie:
+  #   label: (lieu de vie)
+  #   type: tags
+  #   index: all
+  #   lower: true
+  #   width: 1/2
 
   poslieudenaissance:
     extends: poslieudenaissance
@@ -157,41 +187,62 @@ fields:
     type: tabs
 
   situation:
-    label: impression de la rencontre
+    label:
+      fr: impression de la rencontre
+      en: Impression of the encounter
+      ar: الانطباع من الاجتماع
     type: textarea
     width: 1/2
 
   commentaire:
-    label: commentaire
+    label:
+      fr: commentaire
+      en: commentary
+      ar: تعليق
     type: textarea
     width: 1/2
 
   recit:
-    label: entretien édité
+    label:
+      fr: entretien édité
+      en: Interview edited
+      ar: مقابلة تحريرها
     type: markdown
 
   noteauteur:
-    label: note de l'auteur
+    label:
+      fr: note de l'auteur
+      en: Writer's note
+      ar: ملاحظة المؤلف
     type: markdown
 
-  getentities:
-    extends: getentities
-
-  entities:
-    extends: entities
+  # getentities:
+  #   extends: getentities
+  #
+  # entities:
+  #   extends: entities
 
 # ======================
 # VERSIONS
 # ======================
 
   tabversion:
-    label: versions
+    label:
+      fr: versions
+      en: versions
+      ar: نص
     type: tabs
 
   retranscription:
-    label: entretien brut
+    label:
+      fr: entretien brut
+      en: raw interview
+      ar: المقابلة الأصلية
     type: markdown
 
   noncorrige:
-    label: entretien non corrigé
+    label:
+      fr: entretien non corrigé
+      en: Interview not corrected
+      ar: صيانة غير مصححة
     type: markdown

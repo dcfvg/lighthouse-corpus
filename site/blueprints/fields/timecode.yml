@@ -1,3 +1,6 @@
-label: timecode
+label:
+  fr: Heure
+  en: Hour
+  ar: وقت
 type: time
 interval: 1

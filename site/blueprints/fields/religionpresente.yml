@@ -1,4 +1,7 @@
-label: religion presente
+label:
+  fr: religion présente
+  en: Current religion
+  ar: الدين الحالي
 type: tags
 index: all
 lower: true

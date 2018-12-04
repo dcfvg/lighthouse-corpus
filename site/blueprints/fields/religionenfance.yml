@@ -1,4 +1,7 @@
-label: religion enfance
+label:
+  fr: religion enfance
+  en: Religion of childhood
+  ar: دين الطفولة
 type: tags
 index: all
 lower: true

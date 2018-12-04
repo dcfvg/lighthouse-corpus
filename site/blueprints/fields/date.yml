@@ -1,3 +1,7 @@
-label: Date
+label:
+  fr: Date
+  en: Date
+  ar: تاريخ
+
 type: date
 default: today

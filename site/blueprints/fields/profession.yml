@@ -1,4 +1,8 @@
-label: profession
+label:
+  fr: profession
+  en: Profession
+  ar: مهنة
+  
 type: tags
 index: all
 lower: true

@@ -1,4 +1,7 @@
-label: sexe
+label:
+  fr: Sexe
+  en: Gender
+  ar: جنس
 type: tags
 index: all
 lower: true

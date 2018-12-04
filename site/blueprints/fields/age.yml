@@ -1,3 +1,7 @@
-label: age
+label:
+  fr: age
+  en: age
+  ar: عمر
+  
 type: number
 width: 1/2

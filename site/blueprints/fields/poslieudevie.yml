@@ -1,4 +1,8 @@
-label: position lieu de vie
+label:
+  fr: position lieu de vie
+  en: Living Place
+  ar: مكان موقف الحياة
+
 type: map
 center:
   lat: 48.892423

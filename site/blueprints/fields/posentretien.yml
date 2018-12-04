@@ -1,4 +1,8 @@
-label: Lieu entretien
+label:
+  fr: Lieu entretien
+  en: Place of the interview
+  ar: مقابلة الموقع
+
 type: map
 center:
   lat: 48.892423

@@ -1,4 +1,7 @@
-label: langue maternelle
+label:
+  fr: langue maternelle
+  en: mother tongue
+  ar: اللغة الأم
 type: tags
 index: all
 lower: true
