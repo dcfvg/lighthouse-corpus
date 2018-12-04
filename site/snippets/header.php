@@ -10,8 +10,9 @@
 
 
 </head>
-<body class="<?php echo $page->template() ?>">
+<body class="<?php echo $page->template() ?>   <?php if($page->rtlenable()->bool()) echo "rtl" ?>">
 
   <div class="hidden-print banner" role="banner">
     <a href="<?= url() ?>" rel="home"><?= $site->title()->html() ?></a>
+    <?= $page->rtlenable()?>
   </div>

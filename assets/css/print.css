@@ -6722,6 +6722,9 @@ button.close {
     display: none !important;
   }
 }
+.rtl {
+  direction: rtl;
+}
 .marker {
   height: 0;
   padding: 0;

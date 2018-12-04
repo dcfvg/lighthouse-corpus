@@ -24,8 +24,16 @@ fields:
       en: title
       ar: لقب
     type:  text
-    width: 3/4
+    width: 2/4
 
+  rtlenable:
+    label:
+      fr: utiliser l'écriture de droite à gauche
+      en: use right to left writing
+      ar: استخدم اليمين إلى اليسار الكتابة
+    type: checkbox
+
+    width: 1/4
   dreamid:
     label:
       fr: numéro Rêve
