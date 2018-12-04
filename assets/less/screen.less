@@ -1,12 +1,93 @@
 @charset "UTF-8";
 
-@import '../../bower_components/bootstrap/less/bootstrap.less';
-@import 'variables.less';
+// @import '../../bower_components/bootstrap/less/bootstrap.less';
+// @import 'variables.less';
+@import 'font.less';
+@import 'normalize.less';
 
 body {
+  padding: 5vw;
+
     font-family: 'Roboto', sans-serif;
-  // background: rgba(0,0,0,0.30);
-  // background: #58515C;
-  // color: #F2F2F2;
+    &.rtl {
+      direction: rtl;
+    }
+    color: grey;
+
+    background-image: linear-gradient(0deg, #2D2938 0%, #29382B 28%, #2B3034 39%, #2B3236 45%, #352B37 80%, #382929 100%);
+    background-size: 100%;
+    min-height: 100vh;
+
+    .on {
+      // border-bottom: 2px solid yellow;
+      // background-color: white;
+      // color: black;
+      // text-decoration: underline;
+      display: inline;
+    }
+    .off {
+      opacity: 0.2;
+    }
+    a {
+
+      color: yellow;
+      text-decoration: none;
+      // padding: 1px;
+      &:hover, &:active {
+        .on();
+      }
+    }
+
+    font-size: 1.5em;
+
+}
+p.text {
+  font-family: Spectral;
+  line-height: 1.5em;
+}
+.banner {
+  padding: 2vh 0 2vh;
 }
 
+.navigation {
+  li {
+    list-style: none;
+    text-transform: lowercase;
+  }
+}
+
+.home .container {
+  // display: flex;
+}
+
+.metadatas {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 400;
+  display: flex;
+  // flex-wrap: wrap;
+}
+
+.portrait {
+  display: none;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+}
+.portraits {
+  position: fixed;
+  top: 40px;
+  width: 40%;
+  left: 50%;
+}
+
+.metadata {
+  margin: 0 0.5em;
+
+  // &.religionenfance {
+  //   flex-grow: 2; /* default 0 */
+  // }
+  // &.religionpresente {
+  //   flex-grow: 2; /* default 0 */
+  // }
+}
