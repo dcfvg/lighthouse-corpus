@@ -12,8 +12,6 @@
 </head>
 <body class="<?php echo $page->template() ?>">
 
-  <header class="hidden-print container" role="banner">
-      <div class="branding column">
-        <a href="<?= url() ?>" rel="home"><?= $site->title()->html() ?></a>
-      </div>
-  </header>
+  <div class="hidden-print banner" role="banner">
+    <a href="<?= url() ?>" rel="home"><?= $site->title()->html() ?></a>
+  </div>

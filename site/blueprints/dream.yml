@@ -31,7 +31,7 @@ fields:
       fr: numéro Rêve
       en: dream's number
       ar: رقم الحلم
-    type:  number
+    type: autoid
     width: 1/4
 
   date:

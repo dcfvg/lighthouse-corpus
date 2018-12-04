@@ -455,7 +455,7 @@ p.text {
 }
 .portraits {
   position: fixed;
-  top: 40px;
+  bottom: 40px;
   width: 40%;
   left: 50%;
 }
