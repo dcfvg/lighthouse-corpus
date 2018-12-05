@@ -6,72 +6,33 @@
 @import 'normalize.less';
 
 body {
-        filter: blur(0.7px);
-  padding: 5vw;
+  padding: 1vw;
+  font-family: 'Roboto', sans-serif;
+  color: grey;
+  filter: blur(0.7px);
 
-    font-family: 'Roboto', sans-serif;
-    &.rtl {
-      direction: rtl;
-    }
-    color: grey;
+  min-height: 100vh;
+  &.rtl { direction: rtl; }
+  font-size: 0.5em;
 
-    background-size: 100%;
+  .gradient-bg();
 
-    background-image: linear-gradient(-80deg, #2D2938 0%, #29382B 28%, #2B3034 39%, #2B3236 45%, #352B37 80%, #382929 100%);
-
- //https://www.gradient-animator.com/
- background: linear-gradient(46deg, #331f38, #1f2938, #332929, #2e2e30);
- background-size: 200% 200%;
- -webkit-animation: AnimationName 50s ease infinite;
- -moz-animation: AnimationName 50s ease infinite;
- animation: AnimationName 50s ease infinite;
-
- @-webkit-keyframes AnimationName {
-     0%{background-position:0% 50%}
-     50%{background-position:100% 50%}
-     100%{background-position:0% 50%}
- }
- @-moz-keyframes AnimationName {
-     0%{background-position:0% 50%}
-     50%{background-position:100% 50%}
-     100%{background-position:0% 50%}
- }
- @keyframes AnimationName {
-     0%{background-position:0% 50%}
-     50%{background-position:100% 50%}
-     100%{background-position:0% 50%}
- }
-    min-height: 100vh;
-
-    .on {
-      // border-bottom: 2px solid yellow;
-      // background-color: white;
-      // color: black;
-      // text-decoration: underline;
-      display: inline;
-    }
-    .off {
-      opacity: 0.2;
-    }
-    a {
-
-      color: yellow;
-      text-decoration: none;
-      // padding: 1px;
-      &:hover, &:active {
-        .on();
-      }
-    }
-
-    font-size: 0.9em;
-
+  .on {display: inline;}
+  .off { opacity: 0.2;}
+  a {
+    color: yellow;
+    text-decoration: none;
+    &:hover, &:active { .on()
+   }
+  }
 }
+
 p.text {
   font-family: Spectral;
   line-height: 1.5em;
 }
 .banner {
-  padding: 2vh 0 2vh;
+  padding: 2em 0 2em;
 }
 
 .navigation {
@@ -84,37 +45,37 @@ p.text {
 .home .container {
   // display: flex;
 }
-
+hr {
+  height: 0px;
+  border: 0;
+  border-bottom: solid 1px grey;
+}
 .metadatas {
   font-family: 'Roboto Condensed';
   font-style: normal;
-  font-weight: 400;
+  text-transform: lowercase;
   display: flex;
-  // flex-wrap: wrap;
-}
 
-.portrait {
-  display: none;
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
+
+  .metadata {
+    margin: 0 0.5em;
+    display: block;
+    a {}
+  }
 }
 .portraits {
-  position: fixed;
-  bottom: 40px;
-  width: 40%;
-  left: 50%;
+  .portrait {
+    &.hidden {display: none;}
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+  }
 }
 
-.metadata {
-  margin: 0 0.5em;
 
-  // &.religionenfance {
-  //   flex-grow: 2; /* default 0 */
-  // }
-  // &.religionpresente {
-  //   flex-grow: 2; /* default 0 */
-  // }
-}.rtl {
-    direction: rtl;
+.cols {
+  display: flex;
+
+  div:first-child {
+    width: 80vw;
+  }
 }

@@ -1,18 +1,16 @@
 
 $(function() {
 
-  $("a").hover(function(){
+  $(".metadatas a").click(function(e){
 
-    $("a").addClass("off").removeClass("on");
-    $("a[href^='"+$(this).attr("href")+"']").removeClass("off").addClass("on");
+    e.preventDefault();
 
+    $("a").addClass("off")
+    $("a[href^='"+$(this).attr("href")+"']").removeClass("off")
+
+    $(".portrait").addClass('hidden');
+    $(".portraits a[href^='"+$(this).attr("href")+"']").parent().removeClass('hidden');
 
   })
-
-  $("metadatas").hover(function(){}, function(){
-        $("a").removeClass("off");
-  })
-  //
-
 
 });

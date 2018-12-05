@@ -29,3 +29,31 @@
 
 //@font-family-base:        @font-family-serif;
 
+
+.gradient-bg {
+  // background-size: 100%;
+  // background-image: linear-gradient(-80deg, #2D2938 0%, #29382B 28%, #2B3034 39%, #2B3236 45%, #352B37 80%, #382929 100%);
+  //https://www.gradient-animator.com/
+  background: linear-gradient(46deg, #331f38, #1f2938, #332929, #2e2e30);
+  background-size: 200% 200%;
+  -webkit-animation: AnimationName 50s ease infinite;
+  -moz-animation: AnimationName 50s ease infinite;
+  animation: AnimationName 50s ease infinite;
+
+  @-webkit-keyframes AnimationName {
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+  }
+  @-moz-keyframes AnimationName {
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+  }
+  @keyframes AnimationName {
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+  }
+
+}
