@@ -6776,6 +6776,7 @@ a {
   color: black;
 }
 .content {
+  color: black;
   font-family: Spectral;
   font-weight: 600;
 }
@@ -6794,19 +6795,26 @@ a {
   font-size: 4em;
   font-weight: 400;
 }
+.content h2 {
+  font-family: "Roboto Condensed";
+  font-size: 2em;
+  font-weight: 400;
+  margin-top: 2em;
+}
 .content h3 {
   font-size: 1em;
+  font-family: "Roboto Condensed";
 }
 .content .cover {
   text-align: center;
   margin: 0 0 100px;
 }
 .content .metadata {
-  font-family: Roboto;
+  font-family: "Roboto Condensed";
   font-weight: 400;
 }
 .content .metadata strong {
-  font-family: Roboto;
+  font-family: "Roboto Condensed";
   font-weight: 700;
 }
 .dreamIndex {
@@ -6833,10 +6841,12 @@ a {
   line-height: 1.3em;
 }
 .person {
-  margin-top: 0em;
+  margin-top: 0.2em;
   display: inline-block;
-  font-weight: bold;
-  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  width: 20%;
+  text-align: right;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 @media print {
   /* All styles for print should goes here */

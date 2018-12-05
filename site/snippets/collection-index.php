@@ -16,7 +16,7 @@
     $params = params();
     if(isset($params['dreamid'])) {
 
-      $p = $page->children()->slice($params['dreamid'], 1)->first();
+      $p = $page->children()->filterby('dreamid', $params['dreamid'])->first();
 
       snippet('ticket', array('page' => $p, 'id' => $params['dreamid']));
 

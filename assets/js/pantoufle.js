@@ -17,7 +17,7 @@ var elmnt = document.getElementById('ticket');
 
 elmnt.innerHTML = elmnt.innerHTML.replace(
   /<p>-([A-Z](.)+) :/g,
-  '<span class="person">$1</span>&nbsp;:&nbsp;'
+  '<span class="person">$1</span>&nbsp;—&nbsp;'
 );
 // elmnt.innerHTML = elmnt.innerHTML.replace(
 //   /([\u0600-\u06FF\u0750-\u077F\u0000-\u007F](.)) :/g,
