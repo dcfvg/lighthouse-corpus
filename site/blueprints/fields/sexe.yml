@@ -3,7 +3,7 @@ label:
   en: Gender
   ar: جنس
 help:
-  en: male, female, other
+  en: Male, Female, Other
 type: tags
 index: all
 lower: true

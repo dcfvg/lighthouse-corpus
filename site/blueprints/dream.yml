@@ -87,17 +87,6 @@ fields:
   #   lower: true
   #   width: 1/2
 
-  theme:
-    label:
-      fr: thèmes en mot clefs
-      en: themes as tags
-      ar: الموضوعات كعلامات
-    help: use tags and keywords that may be common to other dreams
-    type: tags
-    index: all
-    lower: true
-    width: 1/2
-
   lieu:
     label:
       fr: description du lieu
@@ -109,7 +98,7 @@ fields:
 
   posEntretien:
     extends: posentretien
-
+    width: 1/2
   # lng:
   #   label: (longitude)
   #   type: text
@@ -133,16 +122,20 @@ fields:
 
   nom:
     extends: nom
-    width: 2/5
+    width: 4/5
+  age:
+    extends: age
+    width: 1/5
 
   phone:
     label: Phone
     type: tel
-    width: 2/5
+    width: 1/2
 
-  age:
-    extends: age
-    width: 1/5
+  email:
+    label: Email
+    type: email
+    width: 1/2
 
   sexe:
     extends: sexe
@@ -158,7 +151,7 @@ fields:
       fr: Portrait du/de la rêveur.se
       en: Portrait of the dreamer
       ar: صورة للحالم
-    help: a written version of the dreamer portrait
+    help: A drafted version of the dreamer portrait which includes the collected information (age, place of birth …)
     type: textarea
     width: 1/2
 
@@ -205,8 +198,28 @@ fields:
       en: commentary
       ar: تعليق
 
-    help: informations about the dream ex:summary of the dream in english
+    help: Private informations about the dream, the transcription… Won't be displayed.
     type: textarea
+    width: 1/2
+
+  abstract:
+    label:
+      fr: abstract
+      en: abstract
+
+    help: summary of the dream in english
+    type: textarea
+    width: 1/2
+
+  theme:
+    label:
+      fr: thèmes en mot clefs
+      en: themes as tags
+      ar: الموضوعات كعلامات
+    help: use tags and keywords that may be common to other dreams
+    type: tags
+    index: all
+    lower: true
     width: 1/2
 
   rtlenable:
