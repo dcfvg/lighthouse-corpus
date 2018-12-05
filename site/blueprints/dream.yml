@@ -2,7 +2,7 @@ title: Dream
 
 files:
   sortable: true
-
+deletable: false
 pages: false
 
 fields:
@@ -26,14 +26,6 @@ fields:
     type:  text
     width: 2/4
 
-  rtlenable:
-    label:
-      fr: utiliser l'écriture de droite à gauche
-      en: use right to left writing
-      ar: استخدم اليمين إلى اليسار الكتابة
-    type: checkbox
-
-    width: 1/4
   dreamid:
     label:
       fr: numéro Rêve
@@ -44,15 +36,15 @@ fields:
 
   date:
     extends: date
-    width: 1/3
+    width: 1/2
 
   heure:
     extends: heure
-    width: 1/3
-
-  timecode:
-    extends: timecode
-    width: 1/3
+    width: 1/2
+  #
+  # timecode:
+  #   extends: timecode
+  #   width: 1/3
 
   # rapporteursuser:
   #   label: rapporteurs user
@@ -109,7 +101,7 @@ fields:
       fr: description du lieu
       en: location description
       ar: وصف الموقع
-    type: text
+    type: textarea
     width: 1/2
 
   posEntretien:
@@ -194,14 +186,6 @@ fields:
     label: récit
     type: tabs
 
-  situation:
-    label:
-      fr: impression de la rencontre
-      en: Impression of the encounter
-      ar: الانطباع من الاجتماع
-    type: textarea
-    width: 1/2
-
   commentaire:
     label:
       fr: commentaire
@@ -209,6 +193,23 @@ fields:
       ar: تعليق
     type: textarea
     width: 1/2
+    
+  rtlenable:
+    label:
+      fr: utiliser l'écriture de droite à gauche
+      en: use right to left writing
+      ar: استخدم اليمين إلى اليسار الكتابة
+    type: checkbox
+    width: 1/2
+
+
+  situation:
+    label:
+      fr: impression de la rencontre
+      en: Impression of the encounter
+      ar: الانطباع من الاجتماع
+    type: textarea
+
 
   recit:
     label:

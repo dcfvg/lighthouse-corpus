@@ -5,6 +5,10 @@ files: false
 pages:
   template: dream
   limit: 200
+  sort: dreamid asc
+  num: date
+  deletable: false
+
 
 options:
   template: true
@@ -12,17 +16,38 @@ options:
   url: false
 
 fields:
+
+
+  hidebar:
+    type: hidebar
+
+  pageindex:
+    label: Items
+    type: index
+    options: children
+    rows: 50
+    columns:
+      dreamid: dreamid
+      date: date
+      title: title
+      nom: nom
+      age: Age
+      sexe: gender
+      religionenfance: Religion as a child
+      religionpresente: current religion
+      rapporteurs: interviewer
+      retranscripteur: transcriber
   title:
     label: Title
     type:  text
-    width: 1/3
+    width: 1/4
 
   intro:
     label: Intro
     type:  textarea
-    width: 2/3
+    width: 1/4
 
-  poslieudenaissance:
+  lieu:
     extends: poslieudenaissance
     label: localisation
-    width: 1
+    width: 2/4

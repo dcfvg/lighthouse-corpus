@@ -7,7 +7,7 @@ class AutoidField extends BaseField {
     $input = new Brick('input', null);
     $input->addClass('input');
     $input->attr(array(
-      'type'         => 'text',
+      'type'         => 'number',
       'value'        => $this->value(),
       'name'         => 'autoid',
       'placeholder'  => '–',
