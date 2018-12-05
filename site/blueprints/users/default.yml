@@ -9,6 +9,11 @@ fields:
   sexe:
     extends: sexe
 
+  phone:
+    label: Phone
+    type: tel
+    width: 1/2
+
   languematernelle:
     extends: languematernelle
 

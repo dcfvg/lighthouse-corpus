@@ -2,7 +2,7 @@ label:
   fr: profession
   en: Profession
   ar: مهنة
-  
+help: Job(s) separated by commas
 type: tags
 index: all
 lower: true

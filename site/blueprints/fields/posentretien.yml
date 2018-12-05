@@ -8,4 +8,6 @@ center:
   lat: 48.892423
   lng: 2.215330999999992
   zoom: 14
-help: Déplacer le marqueur ou rechercher une localisation!
+help:
+  fr: Déplacer le marqueur ou rechercher une localisation!
+  en: Search for the place and adjust the zoom. You can also move the pin to be more precise if needed.

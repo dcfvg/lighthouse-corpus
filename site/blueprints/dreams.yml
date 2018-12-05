@@ -25,18 +25,30 @@ fields:
     label: Items
     type: index
     options: children
-    rows: 50
+    rows: 100
+
     columns:
       dreamid: dreamid
       date: date
+      heure: time
       title: title
       nom: nom
       age: Age
       sexe: gender
-      religionenfance: Religion as a child
+      religionenfance: religion as a child
       religionpresente: current religion
       rapporteurs: interviewer
       retranscripteur: transcriber
+      theme: theme
+      recit:
+        label: Story
+        visible: false
+      commentaire:
+        label: commentary
+        visible: false
+      noteauteur:
+        label: noteauteur
+        visible: false
   title:
     label: Title
     type:  text

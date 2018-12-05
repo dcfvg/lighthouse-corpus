@@ -2,6 +2,8 @@ label:
   fr: Sexe
   en: Gender
   ar: جنس
+help:
+  en: male, female, other
 type: tags
 index: all
 lower: true

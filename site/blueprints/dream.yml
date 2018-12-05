@@ -56,15 +56,16 @@ fields:
       fr: rapporteurs
       en: interviewer
       ar: منقلة
+    help: the persons who collected the dream
     extends: users
     width: 1/2
-
 
   retranscripteur:
     label:
       fr: transcripteur
       en: transcriber
       ar: النساخ
+    help: the person doing the retranscription
     extends: users
     width: 1/2
   #
@@ -88,9 +89,10 @@ fields:
 
   theme:
     label:
-      fr: thèmes
-      en: theme
-      ar: المواضيع
+      fr: thèmes en mot clefs
+      en: themes as tags
+      ar: الموضوعات كعلامات
+    help: use tags and keywords that may be common to other dreams
     type: tags
     index: all
     lower: true
@@ -102,6 +104,7 @@ fields:
       en: location description
       ar: وصف الموقع
     type: textarea
+    help: quality of the space, details …
     width: 1/2
 
   posEntretien:
@@ -130,9 +133,16 @@ fields:
 
   nom:
     extends: nom
+    width: 2/5
+
+  phone:
+    label: Phone
+    type: tel
+    width: 2/5
 
   age:
     extends: age
+    width: 1/5
 
   sexe:
     extends: sexe
@@ -148,7 +158,7 @@ fields:
       fr: Portrait du/de la rêveur.se
       en: Portrait of the dreamer
       ar: صورة للحالم
-
+    help: a written version of the dreamer portrait
     type: textarea
     width: 1/2
 
@@ -183,7 +193,10 @@ fields:
 # ======================
 
   tabrecit:
-    label: récit
+    label:
+      fr: récit
+      en: story
+      ar: قصة
     type: tabs
 
   commentaire:
@@ -191,14 +204,17 @@ fields:
       fr: commentaire
       en: commentary
       ar: تعليق
+
+    help: informations about the dream ex:summary of the dream in english
     type: textarea
     width: 1/2
-    
+
   rtlenable:
     label:
       fr: utiliser l'écriture de droite à gauche
       en: use right to left writing
       ar: استخدم اليمين إلى اليسار الكتابة
+    help: By clicking on this, you change the lay out in order to allow arabic
     type: checkbox
     width: 1/2
 
@@ -208,6 +224,7 @@ fields:
       fr: impression de la rencontre
       en: Impression of the encounter
       ar: الانطباع من الاجتماع
+    help: give a comment about the interview ex:Describe the place, the context, how the dreamer is dressed or talks. What do you think of this interview?
     type: textarea
 
 
@@ -216,14 +233,15 @@ fields:
       fr: entretien édité
       en: Interview edited
       ar: مقابلة تحريرها
+    help: "Copy past the edited interview. WARNING for each dreamer type down -name(space): and -LH(space) or light house in arabic if the interview was lead in arabic. Once you are done, check your interview by clicking on OPEN PREVIEW"
     type: markdown
 
-  noteauteur:
-    label:
-      fr: note de l'auteur
-      en: Writer's note
-      ar: ملاحظة المؤلف
-    type: markdown
+  # noteauteur:
+  #   label:
+  #     fr: note de l'auteur
+  #     en: Writer's note
+  #     ar: ملاحظة المؤلف
+  #   type: markdown
 
   # getentities:
   #   extends: getentities

@@ -1,6 +1,6 @@
 label:
-  fr: nom
-  en: name
+  fr: prénom
+  en: first name
   ar: اسم
 
 type: text
