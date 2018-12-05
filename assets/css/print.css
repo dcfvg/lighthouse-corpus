@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i,900,900i|Spectral:400,400i,600,600i');
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
@@ -6762,6 +6761,206 @@ button.close {
     background-position: 0% 50%;
   }
 }
+/* roboto-100 - latin_latin-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 100;
+  src: url('../fonts/roboto-v18-latin_latin-ext-100.eot');
+  /* IE9 Compat Modes */
+  src: local('Roboto Thin'), local('Roboto-Thin'), url('../fonts/roboto-v18-latin_latin-ext-100.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/roboto-v18-latin_latin-ext-100.woff2') format('woff2'), /* Super Modern Browsers */ url('../fonts/roboto-v18-latin_latin-ext-100.woff') format('woff'), /* Modern Browsers */ url('../fonts/roboto-v18-latin_latin-ext-100.ttf') format('truetype'), /* Safari, Android, iOS */ url('../fonts/roboto-v18-latin_latin-ext-100.svg#Roboto') format('svg');
+  /* Legacy iOS */
+}
+/* roboto-100italic - latin_latin-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 100;
+  src: url('../fonts/roboto-v18-latin_latin-ext-100italic.eot');
+  /* IE9 Compat Modes */
+  src: local('Roboto Thin Italic'), local('Roboto-ThinItalic'), url('../fonts/roboto-v18-latin_latin-ext-100italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/roboto-v18-latin_latin-ext-100italic.woff2') format('woff2'), /* Super Modern Browsers */ url('../fonts/roboto-v18-latin_latin-ext-100italic.woff') format('woff'), /* Modern Browsers */ url('../fonts/roboto-v18-latin_latin-ext-100italic.ttf') format('truetype'), /* Safari, Android, iOS */ url('../fonts/roboto-v18-latin_latin-ext-100italic.svg#Roboto') format('svg');
+  /* Legacy iOS */
+}
+/* roboto-regular - latin_latin-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/roboto-v18-latin_latin-ext-regular.eot');
+  /* IE9 Compat Modes */
+  src: local('Roboto'), local('Roboto-Regular'), url('../fonts/roboto-v18-latin_latin-ext-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/roboto-v18-latin_latin-ext-regular.woff2') format('woff2'), /* Super Modern Browsers */ url('../fonts/roboto-v18-latin_latin-ext-regular.woff') format('woff'), /* Modern Browsers */ url('../fonts/roboto-v18-latin_latin-ext-regular.ttf') format('truetype'), /* Safari, Android, iOS */ url('../fonts/roboto-v18-latin_latin-ext-regular.svg#Roboto') format('svg');
+  /* Legacy iOS */
+}
+/* roboto-italic - latin_latin-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 400;
+  src: url('../fonts/roboto-v18-latin_latin-ext-italic.eot');
+  /* IE9 Compat Modes */
+  src: local('Roboto Italic'), local('Roboto-Italic'), url('../fonts/roboto-v18-latin_latin-ext-italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/roboto-v18-latin_latin-ext-italic.woff2') format('woff2'), /* Super Modern Browsers */ url('../fonts/roboto-v18-latin_latin-ext-italic.woff') format('woff'), /* Modern Browsers */ url('../fonts/roboto-v18-latin_latin-ext-italic.ttf') format('truetype'), /* Safari, Android, iOS */ url('../fonts/roboto-v18-latin_latin-ext-italic.svg#Roboto') format('svg');
+  /* Legacy iOS */
+}
+/* roboto-700 - latin_latin-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/roboto-v18-latin_latin-ext-700.eot');
+  /* IE9 Compat Modes */
+  src: local('Roboto Bold'), local('Roboto-Bold'), url('../fonts/roboto-v18-latin_latin-ext-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/roboto-v18-latin_latin-ext-700.woff2') format('woff2'), /* Super Modern Browsers */ url('../fonts/roboto-v18-latin_latin-ext-700.woff') format('woff'), /* Modern Browsers */ url('../fonts/roboto-v18-latin_latin-ext-700.ttf') format('truetype'), /* Safari, Android, iOS */ url('../fonts/roboto-v18-latin_latin-ext-700.svg#Roboto') format('svg');
+  /* Legacy iOS */
+}
+/* roboto-700italic - latin_latin-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 700;
+  src: url('../fonts/roboto-v18-latin_latin-ext-700italic.eot');
+  /* IE9 Compat Modes */
+  src: local('Roboto Bold Italic'), local('Roboto-BoldItalic'), url('../fonts/roboto-v18-latin_latin-ext-700italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/roboto-v18-latin_latin-ext-700italic.woff2') format('woff2'), /* Super Modern Browsers */ url('../fonts/roboto-v18-latin_latin-ext-700italic.woff') format('woff'), /* Modern Browsers */ url('../fonts/roboto-v18-latin_latin-ext-700italic.ttf') format('truetype'), /* Safari, Android, iOS */ url('../fonts/roboto-v18-latin_latin-ext-700italic.svg#Roboto') format('svg');
+  /* Legacy iOS */
+}
+/* roboto-condensed-300 - latin_latin-ext */
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/roboto-condensed-v16-latin_latin-ext-300.eot');
+  /* IE9 Compat Modes */
+  src: local('Roboto Condensed Light'), local('RobotoCondensed-Light'), url('../fonts/roboto-condensed-v16-latin_latin-ext-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/roboto-condensed-v16-latin_latin-ext-300.woff2') format('woff2'), /* Super Modern Browsers */ url('../fonts/roboto-condensed-v16-latin_latin-ext-300.woff') format('woff'), /* Modern Browsers */ url('../fonts/roboto-condensed-v16-latin_latin-ext-300.ttf') format('truetype'), /* Safari, Android, iOS */ url('../fonts/roboto-condensed-v16-latin_latin-ext-300.svg#RobotoCondensed') format('svg');
+  /* Legacy iOS */
+}
+/* roboto-condensed-300italic - latin_latin-ext */
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: italic;
+  font-weight: 300;
+  src: url('../fonts/roboto-condensed-v16-latin_latin-ext-300italic.eot');
+  /* IE9 Compat Modes */
+  src: local('Roboto Condensed Light Italic'), local('RobotoCondensed-LightItalic'), url('../fonts/roboto-condensed-v16-latin_latin-ext-300italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/roboto-condensed-v16-latin_latin-ext-300italic.woff2') format('woff2'), /* Super Modern Browsers */ url('../fonts/roboto-condensed-v16-latin_latin-ext-300italic.woff') format('woff'), /* Modern Browsers */ url('../fonts/roboto-condensed-v16-latin_latin-ext-300italic.ttf') format('truetype'), /* Safari, Android, iOS */ url('../fonts/roboto-condensed-v16-latin_latin-ext-300italic.svg#RobotoCondensed') format('svg');
+  /* Legacy iOS */
+}
+/* roboto-condensed-regular - latin_latin-ext */
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/roboto-condensed-v16-latin_latin-ext-regular.eot');
+  /* IE9 Compat Modes */
+  src: local('Roboto Condensed'), local('RobotoCondensed-Regular'), url('../fonts/roboto-condensed-v16-latin_latin-ext-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/roboto-condensed-v16-latin_latin-ext-regular.woff2') format('woff2'), /* Super Modern Browsers */ url('../fonts/roboto-condensed-v16-latin_latin-ext-regular.woff') format('woff'), /* Modern Browsers */ url('../fonts/roboto-condensed-v16-latin_latin-ext-regular.ttf') format('truetype'), /* Safari, Android, iOS */ url('../fonts/roboto-condensed-v16-latin_latin-ext-regular.svg#RobotoCondensed') format('svg');
+  /* Legacy iOS */
+}
+/* roboto-condensed-italic - latin_latin-ext */
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: italic;
+  font-weight: 400;
+  src: url('../fonts/roboto-condensed-v16-latin_latin-ext-italic.eot');
+  /* IE9 Compat Modes */
+  src: local('Roboto Condensed Italic'), local('RobotoCondensed-Italic'), url('../fonts/roboto-condensed-v16-latin_latin-ext-italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/roboto-condensed-v16-latin_latin-ext-italic.woff2') format('woff2'), /* Super Modern Browsers */ url('../fonts/roboto-condensed-v16-latin_latin-ext-italic.woff') format('woff'), /* Modern Browsers */ url('../fonts/roboto-condensed-v16-latin_latin-ext-italic.ttf') format('truetype'), /* Safari, Android, iOS */ url('../fonts/roboto-condensed-v16-latin_latin-ext-italic.svg#RobotoCondensed') format('svg');
+  /* Legacy iOS */
+}
+/* spectral-300 - latin_latin-ext_vietnamese_cyrillic */
+@font-face {
+  font-family: 'Spectral';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/spectral-v4-latin_latin-ext_vietnamese_cyrillic-300.eot');
+  /* IE9 Compat Modes */
+  src: local('Spectral Light'), local('Spectral-Light'), url('../fonts/spectral-v4-latin_latin-ext_vietnamese_cyrillic-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/spectral-v4-latin_latin-ext_vietnamese_cyrillic-300.woff2') format('woff2'), /* Super Modern Browsers */ url('../fonts/spectral-v4-latin_latin-ext_vietnamese_cyrillic-300.woff') format('woff'), /* Modern Browsers */ url('../fonts/spectral-v4-latin_latin-ext_vietnamese_cyrillic-300.ttf') format('truetype'), /* Safari, Android, iOS */ url('../fonts/spectral-v4-latin_latin-ext_vietnamese_cyrillic-300.svg#Spectral') format('svg');
+  /* Legacy iOS */
+}
+/* spectral-300italic - latin_latin-ext_vietnamese_cyrillic */
+@font-face {
+  font-family: 'Spectral';
+  font-style: italic;
+  font-weight: 300;
+  src: url('../fonts/spectral-v4-latin_latin-ext_vietnamese_cyrillic-300italic.eot');
+  /* IE9 Compat Modes */
+  src: local('Spectral Light Italic'), local('Spectral-LightItalic'), url('../fonts/spectral-v4-latin_latin-ext_vietnamese_cyrillic-300italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/spectral-v4-latin_latin-ext_vietnamese_cyrillic-300italic.woff2') format('woff2'), /* Super Modern Browsers */ url('../fonts/spectral-v4-latin_latin-ext_vietnamese_cyrillic-300italic.woff') format('woff'), /* Modern Browsers */ url('../fonts/spectral-v4-latin_latin-ext_vietnamese_cyrillic-300italic.ttf') format('truetype'), /* Safari, Android, iOS */ url('../fonts/spectral-v4-latin_latin-ext_vietnamese_cyrillic-300italic.svg#Spectral') format('svg');
+  /* Legacy iOS */
+}
+/* spectral-regular - latin_latin-ext_vietnamese_cyrillic */
+@font-face {
+  font-family: 'Spectral';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/spectral-v4-latin_latin-ext_vietnamese_cyrillic-regular.eot');
+  /* IE9 Compat Modes */
+  src: local('Spectral Regular'), local('Spectral-Regular'), url('../fonts/spectral-v4-latin_latin-ext_vietnamese_cyrillic-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/spectral-v4-latin_latin-ext_vietnamese_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */ url('../fonts/spectral-v4-latin_latin-ext_vietnamese_cyrillic-regular.woff') format('woff'), /* Modern Browsers */ url('../fonts/spectral-v4-latin_latin-ext_vietnamese_cyrillic-regular.ttf') format('truetype'), /* Safari, Android, iOS */ url('../fonts/spectral-v4-latin_latin-ext_vietnamese_cyrillic-regular.svg#Spectral') format('svg');
+  /* Legacy iOS */
+}
+/* spectral-italic - latin_latin-ext_vietnamese_cyrillic */
+@font-face {
+  font-family: 'Spectral';
+  font-style: italic;
+  font-weight: 400;
+  src: url('../fonts/spectral-v4-latin_latin-ext_vietnamese_cyrillic-italic.eot');
+  /* IE9 Compat Modes */
+  src: local('Spectral Italic'), local('Spectral-Italic'), url('../fonts/spectral-v4-latin_latin-ext_vietnamese_cyrillic-italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/spectral-v4-latin_latin-ext_vietnamese_cyrillic-italic.woff2') format('woff2'), /* Super Modern Browsers */ url('../fonts/spectral-v4-latin_latin-ext_vietnamese_cyrillic-italic.woff') format('woff'), /* Modern Browsers */ url('../fonts/spectral-v4-latin_latin-ext_vietnamese_cyrillic-italic.ttf') format('truetype'), /* Safari, Android, iOS */ url('../fonts/spectral-v4-latin_latin-ext_vietnamese_cyrillic-italic.svg#Spectral') format('svg');
+  /* Legacy iOS */
+}
+/* spectral-500 - latin_latin-ext_vietnamese_cyrillic */
+@font-face {
+  font-family: 'Spectral';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/spectral-v4-latin_latin-ext_vietnamese_cyrillic-500.eot');
+  /* IE9 Compat Modes */
+  src: local('Spectral Medium'), local('Spectral-Medium'), url('../fonts/spectral-v4-latin_latin-ext_vietnamese_cyrillic-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/spectral-v4-latin_latin-ext_vietnamese_cyrillic-500.woff2') format('woff2'), /* Super Modern Browsers */ url('../fonts/spectral-v4-latin_latin-ext_vietnamese_cyrillic-500.woff') format('woff'), /* Modern Browsers */ url('../fonts/spectral-v4-latin_latin-ext_vietnamese_cyrillic-500.ttf') format('truetype'), /* Safari, Android, iOS */ url('../fonts/spectral-v4-latin_latin-ext_vietnamese_cyrillic-500.svg#Spectral') format('svg');
+  /* Legacy iOS */
+}
+/* spectral-500italic - latin_latin-ext_vietnamese_cyrillic */
+@font-face {
+  font-family: 'Spectral';
+  font-style: italic;
+  font-weight: 500;
+  src: url('../fonts/spectral-v4-latin_latin-ext_vietnamese_cyrillic-500italic.eot');
+  /* IE9 Compat Modes */
+  src: local('Spectral Medium Italic'), local('Spectral-MediumItalic'), url('../fonts/spectral-v4-latin_latin-ext_vietnamese_cyrillic-500italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/spectral-v4-latin_latin-ext_vietnamese_cyrillic-500italic.woff2') format('woff2'), /* Super Modern Browsers */ url('../fonts/spectral-v4-latin_latin-ext_vietnamese_cyrillic-500italic.woff') format('woff'), /* Modern Browsers */ url('../fonts/spectral-v4-latin_latin-ext_vietnamese_cyrillic-500italic.ttf') format('truetype'), /* Safari, Android, iOS */ url('../fonts/spectral-v4-latin_latin-ext_vietnamese_cyrillic-500italic.svg#Spectral') format('svg');
+  /* Legacy iOS */
+}
+/* spectral-600 - latin_latin-ext_vietnamese_cyrillic */
+@font-face {
+  font-family: 'Spectral';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/spectral-v4-latin_latin-ext_vietnamese_cyrillic-600.eot');
+  /* IE9 Compat Modes */
+  src: local('Spectral SemiBold'), local('Spectral-SemiBold'), url('../fonts/spectral-v4-latin_latin-ext_vietnamese_cyrillic-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/spectral-v4-latin_latin-ext_vietnamese_cyrillic-600.woff2') format('woff2'), /* Super Modern Browsers */ url('../fonts/spectral-v4-latin_latin-ext_vietnamese_cyrillic-600.woff') format('woff'), /* Modern Browsers */ url('../fonts/spectral-v4-latin_latin-ext_vietnamese_cyrillic-600.ttf') format('truetype'), /* Safari, Android, iOS */ url('../fonts/spectral-v4-latin_latin-ext_vietnamese_cyrillic-600.svg#Spectral') format('svg');
+  /* Legacy iOS */
+}
+/* spectral-600italic - latin_latin-ext_vietnamese_cyrillic */
+@font-face {
+  font-family: 'Spectral';
+  font-style: italic;
+  font-weight: 600;
+  src: url('../fonts/spectral-v4-latin_latin-ext_vietnamese_cyrillic-600italic.eot');
+  /* IE9 Compat Modes */
+  src: local('Spectral SemiBold Italic'), local('Spectral-SemiBoldItalic'), url('../fonts/spectral-v4-latin_latin-ext_vietnamese_cyrillic-600italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/spectral-v4-latin_latin-ext_vietnamese_cyrillic-600italic.woff2') format('woff2'), /* Super Modern Browsers */ url('../fonts/spectral-v4-latin_latin-ext_vietnamese_cyrillic-600italic.woff') format('woff'), /* Modern Browsers */ url('../fonts/spectral-v4-latin_latin-ext_vietnamese_cyrillic-600italic.ttf') format('truetype'), /* Safari, Android, iOS */ url('../fonts/spectral-v4-latin_latin-ext_vietnamese_cyrillic-600italic.svg#Spectral') format('svg');
+  /* Legacy iOS */
+}
+/* spectral-700 - latin_latin-ext_vietnamese_cyrillic */
+@font-face {
+  font-family: 'Spectral';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/spectral-v4-latin_latin-ext_vietnamese_cyrillic-700.eot');
+  /* IE9 Compat Modes */
+  src: local('Spectral Bold'), local('Spectral-Bold'), url('../fonts/spectral-v4-latin_latin-ext_vietnamese_cyrillic-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/spectral-v4-latin_latin-ext_vietnamese_cyrillic-700.woff2') format('woff2'), /* Super Modern Browsers */ url('../fonts/spectral-v4-latin_latin-ext_vietnamese_cyrillic-700.woff') format('woff'), /* Modern Browsers */ url('../fonts/spectral-v4-latin_latin-ext_vietnamese_cyrillic-700.ttf') format('truetype'), /* Safari, Android, iOS */ url('../fonts/spectral-v4-latin_latin-ext_vietnamese_cyrillic-700.svg#Spectral') format('svg');
+  /* Legacy iOS */
+}
+/* spectral-700italic - latin_latin-ext_vietnamese_cyrillic */
+@font-face {
+  font-family: 'Spectral';
+  font-style: italic;
+  font-weight: 700;
+  src: url('../fonts/spectral-v4-latin_latin-ext_vietnamese_cyrillic-700italic.eot');
+  /* IE9 Compat Modes */
+  src: local('Spectral Bold Italic'), local('Spectral-BoldItalic'), url('../fonts/spectral-v4-latin_latin-ext_vietnamese_cyrillic-700italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/spectral-v4-latin_latin-ext_vietnamese_cyrillic-700italic.woff2') format('woff2'), /* Super Modern Browsers */ url('../fonts/spectral-v4-latin_latin-ext_vietnamese_cyrillic-700italic.woff') format('woff'), /* Modern Browsers */ url('../fonts/spectral-v4-latin_latin-ext_vietnamese_cyrillic-700italic.ttf') format('truetype'), /* Safari, Android, iOS */ url('../fonts/spectral-v4-latin_latin-ext_vietnamese_cyrillic-700italic.svg#Spectral') format('svg');
+  /* Legacy iOS */
+}
 .rtl {
   direction: rtl;
 }
@@ -6777,8 +6976,9 @@ a {
 }
 .content {
   color: black;
-  font-family: Spectral;
-  font-weight: 600;
+  font-family: 'Spectral';
+  font-style: normal;
+  font-weight: 500;
 }
 .content h1,
 .content h2,
@@ -6796,14 +6996,13 @@ a {
   font-weight: 400;
 }
 .content h2 {
-  font-family: "Roboto Condensed";
+  font-family: Spectral;
   font-size: 2em;
-  font-weight: 400;
   margin-top: 2em;
 }
 .content h3 {
   font-size: 1em;
-  font-family: "Roboto Condensed";
+  font-family: 'Roboto Condensed';
 }
 .content .cover {
   text-align: center;
@@ -6847,6 +7046,7 @@ a {
   width: 20%;
   text-align: right;
   font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 600;
 }
 @media print {
   /* All styles for print should goes here */

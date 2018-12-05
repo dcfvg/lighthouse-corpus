@@ -231,7 +231,6 @@ fields:
     type: checkbox
     width: 1/2
 
-
   situation:
     label:
       fr: impression de la rencontre
@@ -239,7 +238,6 @@ fields:
       ar: الانطباع من الاجتماع
     help: give a comment about the interview ex:Describe the place, the context, how the dreamer is dressed or talks. What do you think of this interview?
     type: textarea
-
 
   recit:
     label:
