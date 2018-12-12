@@ -1,8 +1,8 @@
 label:
-  fr: Heure
-  en: Hour
+  fr: heure
+  en: hour
   ar: وقت
-  
+
 type: time
 interval: 5
 default: now
